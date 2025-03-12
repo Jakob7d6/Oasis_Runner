@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dagsvjb7hmik1"]
 
 [ext_resource type="Texture2D" uid="uid://cauhadte7vyn" path="res://assets/pixil-frame-0(1).png" id="1_gafhh"]
-[ext_resource type="Script" path="res://scripts/touch_control.gd" id="1_kik1b"]
+[ext_resource type="Script" uid="uid://qondm0m8b65g" path="res://scripts/touch_control.gd" id="1_kik1b"]
 [ext_resource type="Texture2D" uid="uid://qdi1lcyodld2" path="res://assets/pixil-frame-2(2).png" id="2_gdsu7"]
 [ext_resource type="Texture2D" uid="uid://do5mr8n2mfsqr" path="res://assets/pixil-frame-1(2).png" id="3_240mb"]
 
