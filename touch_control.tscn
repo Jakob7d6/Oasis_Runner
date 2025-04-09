@@ -14,30 +14,46 @@
 [node name="touch_control" type="CanvasLayer"]
 script = ExtResource("1_kik1b")
 
-[node name="left" type="TouchScreenButton" parent="."]
-position = Vector2(550, 500)
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -473.0
+offset_top = -199.0
+offset_right = 1.0
+offset_bottom = 3.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 150
+
+[node name="left" type="TouchScreenButton" parent="HBoxContainer"]
+position = Vector2(0, 60)
 scale = Vector2(7.5, 7.5)
 texture_normal = ExtResource("1_gafhh")
 shape = SubResource("CircleShape2D_fwqf0")
 action = "m_left"
 
-[node name="jump" type="TouchScreenButton" parent="."]
-position = Vector2(725, 500)
+[node name="jump" type="TouchScreenButton" parent="HBoxContainer"]
+position = Vector2(175, 60)
 scale = Vector2(7.5, 7.5)
 texture_normal = ExtResource("2_gdsu7")
 shape = SubResource("CircleShape2D_3fopj")
 action = "jump"
 
-[node name="right" type="TouchScreenButton" parent="."]
-position = Vector2(900, 500)
+[node name="right" type="TouchScreenButton" parent="HBoxContainer"]
+position = Vector2(350, 60)
 scale = Vector2(7.5, 7.5)
 texture_normal = ExtResource("3_240mb")
 shape = SubResource("CircleShape2D_7eh8y")
 action = "m_right"
 
-[connection signal="pressed" from="left" to="." method="_on_left_pressed"]
-[connection signal="released" from="left" to="." method="_on_left_released"]
-[connection signal="pressed" from="jump" to="." method="_on_jump_pressed"]
-[connection signal="released" from="jump" to="." method="_on_jump_released"]
-[connection signal="pressed" from="right" to="." method="_on_right_pressed"]
-[connection signal="released" from="right" to="." method="_on_right_released"]
+[connection signal="pressed" from="HBoxContainer/left" to="." method="_on_left_pressed"]
+[connection signal="released" from="HBoxContainer/left" to="." method="_on_left_released"]
+[connection signal="pressed" from="HBoxContainer/jump" to="." method="_on_jump_pressed"]
+[connection signal="released" from="HBoxContainer/jump" to="." method="_on_jump_released"]
+[connection signal="pressed" from="HBoxContainer/right" to="." method="_on_right_pressed"]
+[connection signal="released" from="HBoxContainer/right" to="." method="_on_right_released"]
