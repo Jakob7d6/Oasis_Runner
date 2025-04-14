@@ -69,7 +69,6 @@ offset_right = 847.0
 offset_bottom = 648.0
 
 [node name="touch_control" parent="spieler/Control" instance=ExtResource("4_frbn2")]
-visible = false
 
 [node name="Killzone" parent="." instance=ExtResource("3_jg28m")]
 position = Vector2(0, 60)

@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://ba0d3nsuyd638"]
+[gd_scene load_steps=4 format=3 uid="uid://ba0d3nsuyd638"]
+
+[ext_resource type="Script" uid="uid://d4lxq17flo15r" path="res://scripts/menu.gd" id="1_olt8n"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_peulp"]
 bg_color = Color(0.278952, 0.651725, 0.785511, 1)
@@ -41,6 +43,7 @@ offset_bottom = 83.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 10
+script = ExtResource("1_olt8n")
 
 [node name="Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
